@@ -1,0 +1,32 @@
+### Create a question
+
+POST http://127.0.0.1:5000/api/questions 
+Content-Type: application/json
+
+{
+  "name": "Bihn Fung",
+  "text": "Fell in the duck sauce",
+  "repo": "repo", 
+  "live": "live" 
+}
+
+
+### View questions 
+GET http://127.0.0.1:5000/api/questions 
+Content-Type: application/json
+
+### Edit a question
+
+PATCH http://127.0.0.1:5000/api/questions/606f7a038606032b5c191d77 
+Content-Type: application/json
+
+{
+  "answered": true
+}
+
+
+### Delete a question 
+
+Delete http://127.0.0.1:5000/api/questions/606f541ba2d1781a64707b5c 
+Content-Type: application/json
+
